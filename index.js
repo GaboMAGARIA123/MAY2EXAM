@@ -38,7 +38,8 @@ const arr1 = [1, 2, 3];
 const arr2 = [3, 4, 5];
 const arr3 = [5, 6, 7];
 const gaertianebuli = [...arr1, ...arr2, ...arr3];
-console.log(gaertianebuli);
+const ara = [...new Set(gaertianebuli)];
+console.log(ara);
 // შედეგი უნდა იყოს: [1, 2, 3, 4, 5, 6, 7]
 // დავალება 7:
 // შექმენი მასივის ასლი, მაგრამ ამოჭერი ერთ-ერთი ელემენტი spread operator და filter() მეთოდის გამოყენებით ისე, რომ ორიგინალი მასივი არ შეიცვალოს.
